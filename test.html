@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gurtam Test Task</title>
+	<link type="text/css" rel="stylesheet" href="gtable.css">
+	<script src="test.js"></script>
+	<script src="data.js"></script>
+	<script>
+		var gTable;
+		window.onload = function(){
+			// Interval was added after test on large data-files ( ove 50 000 rows)
+			// to prevent undefined Data on init
+			var interval = setInterval(function(){
+				if(Data !== undefined){
+					gTable = new GTable({
+						'holder_id': "holder",
+						'data': Data
+					});
+					clearInterval(interval);
+				}
+			}, 100);
+		}
+	</script>
+</head>
+<body>
+
+
+<!--<h1>Gurtam test</h1>-->
+<div id="holder"></div>
+
+
+
+</body>
+</html>

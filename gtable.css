@@ -1,0 +1,41 @@
+input{
+	margin: 0;
+}
+
+div.GTable_table{
+	float:left;
+	width: 500px;
+	overflow-x: auto;
+	border: 1px solid;
+	border-right: none;
+}
+
+div.GTable_scroller{
+	overflow-y: scroll;
+	width: 15px;
+}
+
+div.GTable_holder{
+	width: 520px;
+	overflow-x: visible;
+}
+
+div.GTable_informer{
+	height: 50px;
+	width:100%;
+	border: 2px dotted;
+}
+
+div.GTable_row.gtRowStylish0{
+	background-color: aliceblue;
+}
+div.GTable_row.gtRowStylish1{
+	background-color: antiquewhite;
+}
+div.GTable_row.gtRowStylish2{
+	background-color: bisque;
+}
+
+div.GTable_row.gtRowStylish3 {
+	background-color: blanchedalmond;
+}
